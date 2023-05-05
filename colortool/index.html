@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Lighten/darken</h1>
+        <label for="hex-color">Hex color: </label><input type="text" name="hex-color" id="hex-color" placeholder="#d4af37" value="#d4af37"/>
+        <div class="toggle">
+            <p id="light" class="em">Lighten</p>
+            <div id="toggleBtn">
+                <div class="inner-circle"></div>
+            </div>
+            <p id="dark">Darken</p>
+        </div>
+        <label for="perc" id="perc-label">0% </label><input type="range" name="perc" id="perc" min="0" max="100" value="0"/>
+        <p>Input color</p>
+        <div class="box" id="input-color"></div>
+        <p>Modified color</p>
+        <div class="box" id="modified-color"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

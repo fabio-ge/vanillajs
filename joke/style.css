@@ -1,0 +1,6 @@
+.user{
+    background: linear-gradient(to right,lightsalmon,darksalmon);
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
