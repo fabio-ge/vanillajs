@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch Api</title>
+    <title>Chuck Norris</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app"></div>
+    <div class="container">
+        <h1>Chuck Norris</h1>
+        <img src="chuck.png" alt="chuck norris" width="80px" height="120px">
+        <form>
+            <div class="row">
+                <label for="name">What' s your name?</label>
+                <input type="text" id="name"/>
+                <button id="joke-button" type="submit">JOKE</button>
+            </div>
+        </form>
+        <p id="joke-text"></p>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
