@@ -1,5 +1,7 @@
 :root{
     --clr-bg: khaki;
+    --clr-btn: #80BDE3;
+    --clt-btn-text: ghostwhite;
 }
 
 *{
@@ -11,6 +13,7 @@ html,body{
     padding: 0;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    cursor: url(assets/minihammer.png), auto;
 }
 
 .container{
@@ -25,6 +28,29 @@ html,body{
 
 h1{
     font-size: 36px;
+}
+
+.container p{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container p #punti{
+    font-size: 24px;
+}
+
+.container p strong{
+    font-size: 18px;
+}
+
+.container p button{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--clr-btn);
+    color: var(--clt-btn-text);
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .board{
@@ -53,5 +79,5 @@ h1{
     position: absolute;
     bottom: 10px;
     left: 50px;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
