@@ -1,18 +1,75 @@
+.dark{
+    --clr-header-text: ghostwhite;
+    --clr-header-background: #0C134F; 
+    --clr-toggle-circle: #5C469C;
+    --clr-bg: #1D267D;
+    --clr-clock-border: rgb(212, 173, 252);
+    --clr-numero: rgb(212, 173, 252);
+    --clr-s: #D4ADFC;
+    --clr-m: #5C469C;
+    --clr-h:  #0C134F;
+}
+
+.light{
+    --clr-header-text: pink;
+    --clr-header-background: indigo; 
+    --clr-toggle-circle: #AA336A;
+    --clr-bg: #FFCBB6;
+    --clr-clock-border: rgb(33,33,33);
+    --clr-numero: rgb(44,44,44);
+    --clr-s: #FFA2B2;
+    --clr-m: #FF96A6;
+    --clr-h:  #300C72;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(44,44,44);
+    background-color: var(--clr-bg);
     height: 100vh;
+    transition: all 1.4s ease;
 }
 
 header{
-    color: ghostwhite;
-    text-align: center;
+    color: var(--clr-header-text);
+    background-color: var(--clr-header-background);
     position: absolute;
     top: 0;
-    padding-top: 20px;
+    width: 100%;
     font-size: 30px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#light-dark{
+    display: flex;
+    justify-content: space-between;
+}
+
+#toggle{
+    position: relative;
+    border: 3px solid var(--clr-header-text);
+    border-radius: 20px;
+    width: 60px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+div.circle{
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    display: inline-block;
+    background-color: var(--clr-toggle-circle);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: all 1.4s ease;
 }
 
 #clock{
@@ -20,16 +77,46 @@ header{
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    border: 5px solid rgb(255,255,55);
+    border: 5px solid var(--clr-clock-border);
+}
+
+.numero{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--clr-numero);
+}
+
+#dodici{
+    position: absolute;
+    top: 10px;
+    left: 141px;
+}
+
+#tre{
+    position: absolute;
+    right: 10px;
+    top: 139px;
+}
+
+#sei{
+    position: absolute;
+    bottom: 10px;
+    left: 141px;
+}
+
+#nove{
+    position: absolute;
+    left: 10px;
+    top: 139px; 
 }
 
 .second{
     position: absolute;
-    left: 149px;
+    left: 151px;
     bottom: 149px;
     width: 2px;
     height: 130px;
-    background-color: brown;
+    background-color: var(--clr-s);
     transform-origin: 0 100%;
 }
 
@@ -39,7 +126,7 @@ header{
     bottom: 150px;
     width: 3px;
     height: 100px;
-    background-color: salmon;
+    background-color: var(--clr-m);
     transform-origin: 0 100%;
 }
 
@@ -49,7 +136,7 @@ header{
     bottom: 148px;
     width: 4px;
     height: 80px;
-    background-color: pink;
+    background-color: var(--clr-h);
     transform-origin: 0 100%;
 }
 
@@ -60,5 +147,5 @@ header{
     width: 10px;
     height: 10px;
     border-radius: 5px;
-    background-color: rgb(255,255,55);
+    background-color: var(--clr-clock-border);
 }

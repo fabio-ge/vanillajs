@@ -7,10 +7,18 @@
     <title>Analog clock</title>
     <link rel="stylesheet" href="app.css">
 </head>
-<body>
+<body class="dark">
     <header>
+        <ul>
+            <li id="light-dark"><span id="dark">Dark</span><span id="toggle"><div class="circle"></div></span><span id="light">Light</span></li>
+            <li id="digital-clock"></li>
+        </ul>
     </header>
     <div id="clock">
+        <div class="numero" id="dodici">12</div>
+        <div class="numero" id="tre">3</div>
+        <div class="numero" id="sei">6</div>
+        <div class="numero" id="nove">9</div>
         <div class="second"></div>
         <div class="minute"></div>
         <div class="hour"></div>
