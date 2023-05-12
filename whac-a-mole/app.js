@@ -60,10 +60,7 @@ function popUp(){
     singleMole.style.height = '140px';
     setTimeout(() =>{
         singleMole.style.height = '0px';
-        setTimeout(()=>{
-            popUp();
-        },300);
-        
+        popUp();
     },randomTime);
 }
 
