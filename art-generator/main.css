@@ -37,7 +37,8 @@ section#immagine div.cornice{
 }
 
 section#immagine div.cornice img{
-    padding: 30px;
+    width: 100%;
+    height: 100%;
 }
 
 section{

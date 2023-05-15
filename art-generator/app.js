@@ -9,13 +9,13 @@ fakeBtn.addEventListener('click',async () => {
     cornice.innerHTML = loadingImg;
     let prompt = promptForImage(imgDescription.value);
     let descriptionForImage = await AI.createCompletion(prompt);
-    console.log(descriptionForImage);
-    cornice.innerHTML = '';
+    let createdImg = await AI.createImage(descriptionForImage);
+    cornice.innerHTML = '<img src="'+createdImg+'">';
 });
 
 
 function promptForImage(testo){
-    return `Dal testo proposto genera la descrizione di un' immagine aggiungendo molti particolari visivi buffi e divertenti. L' immagine dev' essere un' illustrazione per un gioco di carte, come ad esempio exploding kittens o sì oscuro signore
+    return `Dal testo proposto genera la descrizione di un' immagine aggiungendo molti particolari visivi buffi e divertenti. L' immagine dev' essere un' illustrazione per un gioco di carte, come ad esempio "exploding kittens" o "sì oscuro signore"
 ###
 testo: due gatti che cucinano un essere umano
 descrizione: due gatti sono ai lati di una grossa pentola, che contiene a malapena un essere umano, perché è molto ciccione. L' umano suda copiosamente perché sotto di lui la pentola è accesa e la sua espressione è molto perplessa.
