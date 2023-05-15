@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira code','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: skyblue;
+}
+
+.container{
+    padding: 20px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2{
+    margin-top: -20px;
+}
+
+section#immagine div.cornice{
+    width: 266px;
+    height: 266px;
+    border: 10px solid rgba(22,22,22,0.8);
+    background-color: ghostwhite;
+}
+
+section#immagine div.cornice img{
+    padding: 30px;
+}
+
+section{
+    margin: 30px;
+}
+
+#descrizione div.user-input{
+    position: relative;
+}
+
+#descrizione input{
+    width: 266px;
+    height: 70px;
+    padding: 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: ghostwhite;
+    font-family: 'Fira code';
+    font-weight: bold;
+    box-shadow: 2px 5px rgba(22,22,22,0.6);
+}
+
+#descrizione span{
+    padding-top: 12px;
+    position: absolute;
+    height: 99%;
+    width: 40px;
+    top: 1px;
+    right: 108px;
+    z-index: 10;
+    background-color: rgba(22,22,22,0.8);
+    color: skyblue;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
