@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #A2A497;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.container{
+    padding: 10px;
+    background-color: indigo;
+    width: 90%;
+    margin: 20px 10%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    box-shadow: 5px -2px rgba(44,44,44,0.4);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+}
+
+header h1{
+    font-size: 1em;
+    color: ghostwhite;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.istruzioni, div.risposta, div.domanda{
+    width: 80%;
+    background-color: pink;
+    padding: 5px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: indigo;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+section form{
+    margin-top: 1em;
+    width: 80%;
+    position: relative;
+}
+
+section form textarea{
+    padding: 10px;
+    width: 100%;
+    background-color: ghostwhite;
+    color: indigo;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: 0;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+section form textarea:focus{
+    outline: none;
+}
+
+section form button{
+    position: absolute;
+    top: 1px;
+    right: 0;
+    height: 4.4em;
+    width: 3em;
+    background-color: ghostwhite;
+    border: 0;
+    cursor:pointer;
+    border-top-right-radius: 12px;
+}
+
+@media  screen and (min-width: 680px) {
+
+    header img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    header h1{
+        font-size: 3em;
+        color: ghostwhite;
+    }
+
+    div.istruzioni, div.risposta, div.domanda{
+        width: 50%;
+        font-size: 1.4em;
+    }
+
+    section form{
+        width: 50%;
+        font-size: 1.4em;
+    }
+}
