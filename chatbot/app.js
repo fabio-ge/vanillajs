@@ -5,6 +5,7 @@ const form = document.querySelector('form');
 const testo = document.getElementById('testo');
 const conversazione = document.getElementById('conversazione');
 const textArea = document.querySelector('textArea');
+const newConversation = document.getElementById('nuova-conversazione');
 
 let conversationArray = [{
     role: 'system',
@@ -29,6 +30,13 @@ form.addEventListener('submit',async (e)=>{
     testo.value = '';
         
 });
+
+
+newConversation.addEventListener('click',() => {
+    window.location.reload();
+});
+
+//Util functions
 
 function renderDomanda(testo){
     let div = document.createElement('div');

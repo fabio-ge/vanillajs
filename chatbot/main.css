@@ -8,16 +8,18 @@ body{
     padding: 0;
     background-color: #A2A497;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 div.container{
-    padding: 10px;
+    padding-top: 10px;
     background-color: indigo;
     width: 90%;
     margin: 20px 10%;
     height: 100%;
     border-top-left-radius: 12px;
-    box-shadow: 5px -2px rgba(44,44,44,0.4);
+    border-bottom-left-radius: 12px;
+    box-shadow: -5px -2px rgba(44,44,44,0.4);
 }
 
 header{
@@ -64,6 +66,7 @@ section form textarea{
     padding: 10px;
     width: 100%;
     background-color: ghostwhite;
+    opacity: 0.9;
     color: indigo;
     border-bottom-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -86,6 +89,16 @@ section form button{
     border: 0;
     cursor:pointer;
     border-top-right-radius: 12px;
+}
+
+p#nuova-conversazione{
+    border: 0.5px solid rgba(44,44,44,0.4);
+    padding: 5px;
+    cursor: pointer;
+    color:indigo;
+    background-color: pink;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgba(196,192,76,0.4);
 }
 
 @media  screen and (min-width: 680px) {
